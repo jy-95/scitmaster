@@ -17,36 +17,32 @@ public class Array_Example03 {
  			변경 후 : 5 2 3 1 3 4 3 6 2 2
  */
 		Scanner sc = new Scanner(System.in);
-		int first;
-		int after;
 		
 		int[] arr = new int [10];
 		System.out.print("변경 전: ");
 		for (int i = 0; i < arr.length; i++) {
-			double num = Math.random();
-			int num2 = (int)(Math.random()*10);
-			arr[i] = num2;
+//			double num = Math.random();
+			int random = (int)(Math.random()*10);
+			arr[i] = random;
 			System.out.print(arr[i] + " ");
-		}
-		
-		System.out.println();
-		
-		System.out.print("변경하고 싶은 위치: ");
-		first = sc.nextInt();
-		
+		}		
+		System.out.print("\n변경하고 싶은 위치: ");
+		int spot = sc.nextInt();
 		System.out.print("변경할 위치: ");
-		after = sc.nextInt();
+		int target = sc.nextInt();
 		
-		int temp = 0;
+		int temp;
+		temp = arr[spot-1];
+		arr[spot-1] = arr[target-1];
+		arr[target-1] = temp;
 		
-		temp = arr[first-1];
-		arr[first-1] = arr[after-1];
-		arr[after-1] = temp;
-		
-		System.out.print("변경 후: ");
-		for (int i = 0; i < arr.length; i++) {
-			System.out.print(arr[i] + " ");
+		System.out.print("\n변경 후: ");
+		for (int j : arr) {
+			System.out.print(j + " ");
 		}
+//		for (int i = 0; i < arr.length; i++) {
+//			System.out.print(arr[i] + " ");
+//		}
 		
 		
 	}
