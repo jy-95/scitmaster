@@ -22,12 +22,19 @@ public class Theater_Method {
 		System.out.println("번호를 선택하세요: ");
 	}
 	
-	public int inputCnt() {
-		
+	public int inputCnt(int cnt) {
 		int result = 0;
+
+		if (cnt == 2) {
 		System.out.println("몇개의 좌석을 예약하시겠습니까? :");
 		result = scan.nextInt();
-		return result;
+		return result; 
+		} else if (cnt == 3) {
+			System.out.println("프로그램을 종료합니다.");
+			return result;
+		} else {
+			return result;
+		}
 	}
 	
 	public void seatInfo() {

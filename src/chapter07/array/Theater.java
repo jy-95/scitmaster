@@ -46,9 +46,10 @@ public class Theater {
 					tm.seatInfo();
 					break;
 				case 2:
-					tm.reservationSeats(tm.inputCnt());
+					tm.reservationSeats(tm.inputCnt(num));
 					break;
-				case 0:
+				case 3:
+					tm.inputCnt(num);
 					return;
 				default:
 					break;
