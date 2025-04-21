@@ -50,7 +50,7 @@ public class Theater {
 					break;
 				case 3:
 					tm.inputCnt(num);
-					return;
+					return; //돌려줄 값이 없는 메서드에서(void) return을 사용시 메인 메서드 종료
 				default:
 					break;
 			}
