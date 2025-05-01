@@ -25,7 +25,7 @@ public class C093_string2 {
 		String str4 = "Kim Sang Hyung";
 		System.out.println(str4.toLowerCase());
 		System.out.println(str4.toUpperCase());
-		str.toUpperCase();
+		str4.toUpperCase();
 		System.out.println(str4);	//원본 변경 X
 		
 		// trim, concat

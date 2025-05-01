@@ -12,12 +12,12 @@ public class C061_twoDimension_array2 {
 		int classSum = 0;
 		for (int i = 0; i < score.length; i++) {
 			int sum = 0;
-			for (int j = 0; j < score.length; j++) {
+			for (int j = 0; j < score[i].length; j++) {
 				sum += score[i][j];
 			}
 			System.out.println((i+1)+"반 > 총점: "
 					+ sum + ", 평균: "
-					+ (float) sum / score[0].length);
+					+ (float) sum / score[i].length);
 			classSum += sum;
 		}
 		System.out.println("학급 전체 평균: "

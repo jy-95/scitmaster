@@ -9,10 +9,7 @@ public class Knight extends Novice implements Skill {
 	public Knight(){}
 	
 	public Knight(String name, int strength, int dexterity, int intelligence) {
-		this.name = name;
-		this.strength = strength;
-		this.dexterity = dexterity;
-		this.intelligence = intelligence;
+		super(name, strength, dexterity, intelligence);
 	}
 	
 	@Override

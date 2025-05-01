@@ -25,7 +25,7 @@ public class C091_wrapper {
 		String a = "56", b ="78";
 		System.out.println(a + b); //문자열 이어붙이기
 		System.out.println(Integer.parseInt(a) + Integer.parseInt(b));
-		//Integer.pardeInt() = 매개변수로 들어간 문자열이 변환될 수 있다면 정수값으로 바꿔줌
+		//Integer.parseInt() = 매개변수로 들어간 문자열이 변환될 수 있다면 정수값으로 바꿔줌
 		
 		// 3. Unboxing (Wrapper > 기본형)
 		Integer wrapInt2 = Integer.valueOf(629);

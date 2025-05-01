@@ -68,8 +68,8 @@ public class GameMain_Method {
 	public void changeJob() {
 		System.out.println("=== 직업 종류 ===");
 		System.out.println("1. 기사");
-		System.out.println("2. 도적");
-		System.out.println("3. 마법사");
+		System.out.println("2. 마법사");
+		System.out.println("3. 도적");
 		System.out.println("전직할 직업의 번호를 선택하세요.");
 		
 		int num = scan.nextInt();
@@ -79,11 +79,11 @@ public class GameMain_Method {
 			System.out.println("기사로 전직합니다.");
 			break;
 			case 2: 
-			char1 = new Magician();
+			char1 = new Magician(char1.getName(), char1.getStrength(), char1.getDexterity(), char1.getIntelligence());
 			System.out.println("마법사로 전직합니다.");
 			break;
 			case 3 :
-			char1 = new Thief();
+			char1 = new Thief(char1.getName(), char1.getStrength(), char1.getDexterity(), char1.getIntelligence());
 			System.out.println("도적으로 전직합니다.");
 			break;
 		}

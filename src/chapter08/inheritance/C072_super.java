@@ -27,7 +27,7 @@ class Student extends Human{
 	}
 	
 	void study() {
-		System.out.printf("이름: %s, 학번: %d, 전공: %s", 
+		System.out.printf("이름: %s, 학번: %d, 전공: %s \n", 
 				super.name, stnum, major);
 	}
 }

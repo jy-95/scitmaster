@@ -10,7 +10,7 @@ public class C064_enhancedForLoop2 {
 		};
 		for (int[] student : score) {	// 가로로 한 줄씩 배열을 뽑아옴
 			for (int subject : student) {	//뽑아온 배열의 값 중 정수를 하나씩 반복
-				System.out.println(subject + " ");
+				System.out.print(subject + " ");
 			}
 			System.out.println();
 		}
