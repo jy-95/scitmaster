@@ -32,6 +32,9 @@ public class C098_record {
 		System.out.println(m);
 		System.out.println(m.name());
 		System.out.println(m.memberCode());
+//		Member t = new Member(1);
+//		System.out.println(t.name());
+//		System.out.println(t.memberCode());
 	}
 
 }

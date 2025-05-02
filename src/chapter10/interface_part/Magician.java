@@ -8,11 +8,8 @@ public class Magician extends Novice implements Skill{
 	public Magician(){}
 	
 	public Magician(String name, int strength, int dexterity, int intelligence) {
-		this.name = name;
-		this.strength = strength;
-		this.dexterity = dexterity;
-		this.intelligence = intelligence;
-	}
+		super(name, strength, dexterity, intelligence);
+		}
 	
 	@Override
 	public void skill() {

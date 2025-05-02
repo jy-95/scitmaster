@@ -24,7 +24,7 @@ public class Theater {
 		 * 		1. printMenu() : 극장 좌석의 예약 현황을 보여준다.
 		 * 		2. inputCnt() : 예약할 좌석의 개수를 입력받아 반환한다.
 		 * 		3. seatInfo() : 2차원배열을 이용하여 극장 좌석의 예약현황을 보여준다.
-		 * 				(예약 X : 1, 예약 O : 0)
+		 * 				(예약 X : 0, 예약 O : 1)
 		 * 		4. reservationSeats(int cnt) : 예약할 좌석의 개수를 매개변수(parameter)로 받고
 		 * 				그 횟수만큼 행과 열의 값을 입력받는다.
 		 * 				a. 예약이 되어 있지 않을 경우(해당 행과 열의 값이 0일때), 
@@ -33,11 +33,11 @@ public class Theater {
 		 * 				   "x행x열은 예약된 좌석입니다."라는 문구를 출력하고, 다시 행과 열을 입력 받는다.
 		 * */
 		
-		
 		Theater_Method tm = new Theater_Method();
 		Scanner scan = new Scanner(System.in);
 		int num = 0, cnt = 0;
 		
+		tm.printText(3);
 		while(true) {
 			tm.printMenu();
 			num = scan.nextInt();
@@ -46,12 +46,14 @@ public class Theater {
 					tm.seatInfo();
 					break;
 				case 2:
-					tm.reservationSeats(tm.inputCnt(num));
+					cnt = tm.inputCnt();
+					tm.reservationSeats(cnt);		
 					break;
-				case 3:
-					tm.inputCnt(num);
-					return; //돌려줄 값이 없는 메서드에서(void) return을 사용시 메인 메서드 종료
+				case 0:
+					tm.printText(1);
+					return;
 				default:
+					tm.printText(2);
 					break;
 			}
 		}
