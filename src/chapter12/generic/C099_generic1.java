@@ -38,7 +38,7 @@ public class C099_generic1 {
 		BeverageBox box = new BeverageBox(arr);
 		
 		Coffee coffee = (Coffee)box.getBeverage(0);//Object 타입으로 리턴하지만 Coffee 타입으로 받고 싶으니 형변환한다.
-		Juice juice = (Juice)box.getBeverage(1);//coffee 타입의 배열이 있는데 juice 타입으로 받으려 하면 에러가 발생할 수 있다.
+//		Juice juice = (Juice)box.getBeverage(1);//coffee 타입의 배열이 있는데 juice 타입으로 받으려 하면 에러가 발생할 수 있다.
 												// 다만 실행 전까지는 알 수 없다.
 		
 		//제너릭 사용
